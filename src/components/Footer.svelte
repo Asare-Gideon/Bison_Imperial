@@ -65,7 +65,7 @@
       <p>
         © <span>Copyright</span>
         <strong class="px-1 sitename"
-          >Bison Imperial Global Shipping & Logistics Ltd
+          >Bison Imperial Global Shipping & Logistics
         </strong>
         <span>All Rights Reserved</span>
       </p>
