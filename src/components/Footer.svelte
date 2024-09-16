@@ -62,7 +62,9 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>
+      <p
+        style="width: 90%; text-align: center; margin-left: auto; margin-right: auto;"
+      >
         © <span>Copyright</span>
         <strong class="px-1 sitename"
           >Bison Imperial Global Shipping & Logistics

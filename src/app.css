@@ -253,7 +253,7 @@ h6 {
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 4px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .header .btn-getstarted:hover,

@@ -18,10 +18,10 @@
     <div class="container position-relative">
       <h1>Quote</h1>
       <nav class="breadcrumbs">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-          labore nihil magnam. Quasi aliquid, officia neque natus adipisci
-          perspiciatis velit.
+        <p class="quote-para">
+          Get an estimated price by simply entering your shipment details, and
+          our calculator will provide you with an instant estimate for your
+          shipping costs.
         </p>
       </nav>
     </div>
@@ -32,6 +32,11 @@
 </div>
 
 <style>
+  .quote-para {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .quote-cont {
     min-height: 50vh;
   }
@@ -63,6 +68,11 @@
   @media (max-width: 600px) {
     .quote-cont {
       min-height: auto;
+    }
+    .quote-para {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>

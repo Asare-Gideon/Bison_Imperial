@@ -228,7 +228,7 @@
   }
   .main {
     position: absolute;
-    top: 30vh;
+    top: 35vh;
     left: 0;
     right: 0;
   }
