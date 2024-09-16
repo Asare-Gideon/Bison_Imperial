@@ -66,9 +66,14 @@
         style="width: 90%; text-align: center; margin-left: auto; margin-right: auto;"
       >
         © <span>Copyright</span>
-        <strong class="px-1 sitename"
+        <br class="break" />
+        <strong class="px-1 sitename hidden-phone"
           >Bison Imperial Global Shipping & Logistics
         </strong>
+        <span class="hide-big sitename hidden-phone">
+          Bison Imperial Global Shipping & Logistics
+        </span>
+        <br class="break" />
         <span>All Rights Reserved</span>
       </p>
       <div class="credits">
@@ -87,3 +92,23 @@
 
   <!-- Preloader -->
 </div>
+
+<style>
+  .break {
+    display: none;
+  }
+  .hide-big {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .break {
+      display: block;
+    }
+    .hidden-phone {
+      display: none;
+    }
+    .hide-big {
+      display: inline;
+    }
+  }
+</style>
