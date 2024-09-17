@@ -19,6 +19,7 @@
         </li>
         <li><a href="/about">About</a></li>
         <li><a href="/services">Services</a></li>
+        <li><a href="/team">Team</a></li>
         <li><a href="/contacts">Contact</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
