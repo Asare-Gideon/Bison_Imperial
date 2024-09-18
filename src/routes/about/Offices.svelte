@@ -79,7 +79,11 @@
   </div>
 </section>
 
-<section id="featured-services" class="featured-services section">
+<section
+  id="featured-services"
+  style="margin-top: -60px;"
+  class="featured-services section"
+>
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos-delay="100">
