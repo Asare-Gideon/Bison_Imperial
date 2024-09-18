@@ -3,6 +3,7 @@
   import img1 from "../../lib/img/team/team1.jpg";
   import img2 from "../../lib/img/team/team2.jpg";
   import img3 from "../../lib/img/team/team3.jpg";
+  import img4 from "../../lib/img/team/team4.jpg";
 </script>
 
 <div class="py-5 bg-light team1">
@@ -60,9 +61,10 @@
                 </h6>
                 <h5 class="headerSubTitle">Founder and CEO</h5>
                 <p>
-                  Yaw Oppong Agyemang is the Founder and CEO of Bison Imperial
-                  Global, bringing over 15 years of expertise in business
-                  management, project coordination, and minerals exportation
+                  Isaac Owusu Nyantakyi Brempong is the Founder and CEO of Bison
+                  Imperial Global, bringing over 15 years of expertise in
+                  business management, project coordination, and minerals
+                  exportation
                 </p>
               </div>
             </div>
@@ -70,62 +72,6 @@
           <!-- Row -->
         </div>
       </div>
-      <!-- column  -->
-      <div class="col-lg-6">
-        <div class="card card-shadow border-0 mb-4">
-          <!-- Row -->
-          <div class="row no-gutters card-shadow">
-            <div
-              class="col-md-5 pro-pic"
-              style={`background:url(${img2})no-repeat center center / cover`}
-            >
-              <div class="card-img-overlay">
-                <ul class="list-inline position-relative text-center">
-                  <li class="list-inline-item">
-                    <a
-                      href="#"
-                      class="text-decoration-none d-block text-white px-1"
-                      ><Facebook size={21} color="white" /></a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="#"
-                      class="text-decoration-none d-block text-white px-1"
-                      ><Instagram size={21} color="white" /></a
-                    >
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="#"
-                      class="text-decoration-none d-block text-white px-1"
-                      ><Twitter size={21} color="white" /></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-7 bg-white">
-              <div class="p-4">
-                <h6 class="mb-3 font-weight-medium headerTitle">
-                  Yaw Oppong Agyemang
-                </h6>
-                <h5 class="headerSubTitle">General Manager</h5>
-
-                <p>
-                  Yaw Oppong Agyemang is the General Manager at Bison Imperial
-                  Global, specializing in international trade operations,
-                  customs clearance, and trade facilitation
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Row -->
-        </div>
-      </div>
-      <!-- column  -->
-    </div>
-    <div class="row">
       <!-- column  -->
       <div class="col-lg-6">
         <div class="card card-shadow border-0 mb-4">
@@ -166,11 +112,12 @@
                 <h6 class="mb-3 font-weight-medium headerTitle">
                   Henry Raphael Kemausuor
                 </h6>
-                <h5 class="headerSubTitle">Operations Manager</h5>
+                <h5 class="headerSubTitle">General Manager</h5>
+
                 <p>
-                  Henry Raphael Kemausuor is the Operational Manager at Bison
-                  Imperial Global, specializing in daily operations, trade
-                  facilitation, and logistics management.
+                  Henry Raphael Kemausuor is the General Manager at Bison
+                  Imperial Global, specializing in international trade
+                  operations, customs clearance, and trade facilitation
                 </p>
               </div>
             </div>
@@ -178,6 +125,9 @@
           <!-- Row -->
         </div>
       </div>
+      <!-- column  -->
+    </div>
+    <div class="row">
       <!-- column  -->
       <div class="col-lg-6">
         <div class="card card-shadow border-0 mb-4">
@@ -187,7 +137,6 @@
               class="col-md-5 pro-pic"
               style={`background:url(${img2})no-repeat center center / cover`}
             >
-              >
               <div class="card-img-overlay">
                 <ul class="list-inline position-relative text-center">
                   <li class="list-inline-item">
@@ -219,10 +168,64 @@
                 <h6 class="mb-3 font-weight-medium headerTitle">
                   Yaw Oppong Agyemang
                 </h6>
-                <h5 class="headerSubTitle">General Manager</h5>
+                <h5 class="headerSubTitle">Operations Manager</h5>
                 <p>
-                  You can relay on our amazing features list and also our
-                  customer services will be great experience.
+                  Yaw Oppong Agyemang is the Operational Manager at Bison
+                  Imperial Global, specializing in daily operations, trade
+                  facilitation, and logistics management.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Row -->
+        </div>
+      </div>
+      <!-- column  -->
+      <div class="col-lg-6">
+        <div class="card card-shadow border-0 mb-4">
+          <!-- Row -->
+          <div class="row no-gutters card-shadow">
+            <div
+              class="col-md-5 pro-pic"
+              style={`background:url(${img4})no-repeat center center / cover`}
+            >
+              <div class="card-img-overlay">
+                <ul class="list-inline position-relative text-center">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-block text-white px-1"
+                      ><Facebook size={21} color="white" /></a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-block text-white px-1"
+                      ><Instagram size={21} color="white" /></a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-block text-white px-1"
+                      ><Twitter size={21} color="white" /></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-7 bg-white">
+              <div class="p-4">
+                <h6 class="mb-3 font-weight-medium headerTitle">
+                  Richard Asubonteng
+                </h6>
+                <h5 class="headerSubTitle">Head of Finance</h5>
+                <p>
+                  Richard Asubonteng is the Finance Director at Bison Imperial
+                  Global, with over three years of experience in finance,
+                  taxation, and compliance. He is a Chartered Accountant and a
+                  member of ACCA (UK) and CIT (Ghana)
                 </p>
               </div>
             </div>
@@ -236,9 +239,7 @@
 </div>
 
 <style>
-  @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
   .team1 {
-    font-family: "Montserrat", sans-serif;
     color: #8d97ad;
     font-weight: 300;
   }
@@ -275,7 +276,7 @@
   }
 
   .team1 .pro-pic {
-    min-height: 250px;
+    min-height: 280px;
     position: relative;
   }
 
