@@ -26,8 +26,8 @@
           port enclave of Ghana (Tema) with presence in Accra and Kumasi.
         </p>
         <ul>
-          <li>
-            <i class="bi bi-diagram-3"></i>
+          <li class="">
+            <i class="bi bi-diagram-3 about-icon"></i>
             <div>
               <h5>EVOLUTION OF SHIPPING SOLUTIONS</h5>
               <p>
@@ -38,7 +38,7 @@
             </div>
           </li>
           <li>
-            <i class="bi bi-fullscreen-exit"></i>
+            <i class="bi bi-fullscreen-exit about-icon"></i>
             <div>
               <h5>INTEGRITY IN EVERY ACTION</h5>
               <p>
@@ -49,7 +49,7 @@
             </div>
           </li>
           <li>
-            <i class="bi bi-broadcast"></i>
+            <i class="bi bi-broadcast about-icon"></i>
             <div>
               <h5>THE POWER OF TEAMWORK</h5>
               <p>
@@ -64,3 +64,11 @@
     </div>
   </div>
 </section>
+
+<style>
+  @media only screen and (max-width: 600px) {
+    .about-icon {
+      font-size: 30px !important;
+    }
+  }
+</style>

@@ -18,7 +18,7 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos-delay="100">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">Tema Office</h4>
@@ -39,7 +39,7 @@
 
       <div class="col-lg-4 col-md-6 service-item d-flex">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">Kumasi Office</h4>
@@ -59,7 +59,7 @@
 
       <div class="col-lg-4 col-md-6 service-item d-flex">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">TAKORADI Office</h4>
@@ -82,13 +82,13 @@
 <section
   id="featured-services"
   style="margin-top: -60px;"
-  class="featured-services section"
+  class="featured-services section second-section"
 >
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 service-item d-flex" data-aos-delay="100">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">ELUBO Office</h4>
@@ -96,7 +96,7 @@
             Elubo future break complex opposite Obama filling Station
           </p>
           <p class="contact-p">
-            <span> <Mail size={19} /></span> elubo@bisonshipping.org,,
+            <span> <Mail size={19} /></span> elubo@bisonshipping.org,
           </p>
         </div>
       </div>
@@ -104,7 +104,7 @@
 
       <div class="col-lg-4 col-md-6 service-item d-flex">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">KIA Office</h4>
@@ -119,10 +119,9 @@
         </div>
       </div>
       <!-- End Service Item -->
-
-      <div class="col-lg-4 col-md-6 service-item d-flex">
+      <div class="col-lg-4 col-md-6 service-item d-flex office-section">
         <div class="icon flex-shrink-0">
-          <MapPin size={40} color="#f68b1e" />
+          <MapPin size={35} color="#f68b1e" />
         </div>
         <div>
           <h4 class="title">Kotoka Office</h4>
@@ -130,11 +129,11 @@
             Kotoka International Airport office Aviance Cargo Village, Room 50
           </p>
           <p class="contact-p">
-            <span> <Mail size={19} /></span> info@bisonshipping.org,
+            <span> <Mail size={19} /></span>info@bisonshipping.org,
             <span style="margin-left: 5px;">
               <br class="break" />
               <Phone size={19} />
-            </span>+233322498145
+            </span> +233322498145
           </p>
         </div>
       </div>
@@ -165,6 +164,12 @@
     .break {
       display: block;
       margin-top: 8px !important;
+    }
+    .d-flex {
+      margin-top: -15px !important;
+    }
+    .second-section {
+      margin-top: -90px !important;
     }
   }
 </style>

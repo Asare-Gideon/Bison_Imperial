@@ -21,8 +21,8 @@
               <div class="me-3 icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="25"
+                  height="25"
                   fill="currentColor"
                   class="bi bi-check-circle-fill"
                   viewBox="0 0 16 16"
@@ -42,8 +42,8 @@
               <div class="me-3 icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="25"
+                  height="25"
                   fill="currentColor"
                   class="bi bi-check-circle-fill"
                   viewBox="0 0 16 16"
@@ -63,8 +63,8 @@
               <div class="me-3 icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="25"
+                  height="25"
                   fill="currentColor"
                   class="bi bi-check-circle-fill"
                   viewBox="0 0 16 16"
@@ -106,10 +106,14 @@
   }
   @media (max-width: 600px) {
     .para {
-      font-size: 17px !important;
+      font-size: 15px !important;
     }
     .para2 {
-      font-size: 15px;
+      font-size: 15px !important;
+    }
+    .icon {
+      color: #f68b1e;
+      font-size: 18px !important;
     }
   }
 </style>

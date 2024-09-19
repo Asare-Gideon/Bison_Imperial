@@ -13,7 +13,7 @@
           <h2 class="mission-header">Our Mission</h2>
         </div>
         <div class="section-content">
-          <p>
+          <p class="v-para">
             To ensure that our clients and other stakeholders enjoy the best
             service and are competitive by not only delivering ahead of
             schedule, but also in an innovative, efficient and effective way.
@@ -27,7 +27,7 @@
           <h2 class="mission-header">Our Vision</h2>
         </div>
         <div class="section-content">
-          <p>
+          <p class="v-para">
             Our vision is to be the most sought-after shipping and logistics
             provider in Africa, known for our excellence, reliability, and
             innovative solutions. We strive to set new industry standards by
@@ -76,5 +76,10 @@
   .section-content p {
     font-size: 1.1rem;
     line-height: 1.6;
+  }
+  @media only screen and (max-width: 600px) {
+    .v-para {
+      font-size: 15px !important;
+    }
   }
 </style>
