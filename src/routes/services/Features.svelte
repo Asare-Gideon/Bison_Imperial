@@ -30,7 +30,7 @@
       </div>
       <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
         <h3>Customs Brokerage & Clearance</h3>
-        <p class="fst-italic">
+        <p class="fst-">
           Bison Global Shipping and Logistics is inundated with staff and
           management with excellent understanding of trade prerequisite,
           procedures, customs tariff and valuation regulations. Bison Global
@@ -74,7 +74,7 @@
         data-aos-delay="200"
       >
         <h3>Warehousing & Ex-warehousing</h3>
-        <p class="fst-italic">
+        <p class="fst-">
           Bison Global Shipping and Logistics through its warehouse partners
           situated at strate- gic locations in the country (ie Tema, Accra,
           Kumasi, Takoradi, Sunyani and Tamale) gives our clients the advantage
@@ -141,7 +141,7 @@
       </div>
       <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
         <h3>Stay Ahead with Expert Guidance on Trade Trends</h3>
-        <p class="fst-italic">
+        <p class="">
           Understanding your business environment helps an organization to make
           realistic plans and ensure effective implementation of these plans.
         </p>
@@ -197,7 +197,7 @@
       </div>
       <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
         <h3>First-Class Domestic and International Courier Services</h3>
-        <p class="fst-italic">
+        <p class="fst">
           Bison Imperial Global Shipping and Logistics provides first class
           courier service on both Domestic and International front.
         </p>

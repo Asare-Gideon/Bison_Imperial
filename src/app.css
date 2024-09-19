@@ -1078,9 +1078,13 @@ section,
   font-size: 18px;
   font-weight: 700;
 }
+.about p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
 
 .about .content ul p {
-  font-size: 14px;
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
 .about .content p:last-child {

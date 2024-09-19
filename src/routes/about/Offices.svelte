@@ -70,7 +70,7 @@
             <span> <Mail size={19} /></span> takoradi@bisonshipping.org,
             <span style="margin-left: 5px;">
               <br class="break" /><Phone size={19} />
-            </span> +233534520648
+            </span> +233534520684
           </p>
         </div>
       </div>
@@ -114,12 +114,12 @@
             <span style="margin-left: 5px;">
               <br class="break" />
               <Phone size={19} />
-            </span> +233206750049
+            </span> +23355329332
           </p>
         </div>
       </div>
       <!-- End Service Item -->
-      <div class="col-lg-4 col-md-6 service-item d-flex office-section">
+      <!-- <div class="col-lg-4 col-md-6 service-item d-flex office-section">
         <div class="icon flex-shrink-0">
           <MapPin size={35} color="#f68b1e" />
         </div>
@@ -136,7 +136,7 @@
             </span> +233322498145
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- End Service Item -->
     </div>
   </div>
