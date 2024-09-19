@@ -11,7 +11,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <span>Our Services<br /></span>
-    <h2>Our ServiceS</h2>
+    <h2>Our Services</h2>
     <p>
       Fast, reliable shipping with customs support, tracking, and flexible
       delivery options for efficient global logistics

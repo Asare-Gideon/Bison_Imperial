@@ -6,8 +6,8 @@
 
 <section id="featured-services" class="featured-services section">
   <div class="container section-title" data-aos="fade-up">
-    <span>OUR OFFICES AND DELIVERIES</span>
-    <h2>OUR OFFICES AND DELIVERIES</h2>
+    <span>Our Offices And Deliveries</span>
+    <h2>Our Offices And Deliveries</h2>
     <p>
       Our regional offices and efficient logistics network ensure reliable,
       seamless deliveries tailored to your needs.
@@ -173,6 +173,9 @@
     }
     .second-section {
       margin-top: -90px !important;
+    }
+    .title {
+      font-size: 18px !important;
     }
   }
 </style>
