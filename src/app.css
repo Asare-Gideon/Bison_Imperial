@@ -60,11 +60,7 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
-h1,
-h2,
-h3 h4,
-h5,
-h6,
+span,
 p {
   color: var(--default-color);
   font-family: var(--default-font);
@@ -88,7 +84,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--heading-font) !important;
 }
 
 /* Pulsating Play Button

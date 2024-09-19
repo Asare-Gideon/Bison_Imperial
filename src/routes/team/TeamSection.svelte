@@ -11,7 +11,7 @@
     <div class="row justify-content-center mb-3">
       <div class="col-md-7 text-center">
         <h3 class="mb-3">Experienced & Professional Team</h3>
-        <h6 class="subtitle font-weight-normal">
+        <h6 class="subtitle font-weight-normal" style="color: black;">
           Our team of industry experts is committed to delivering top-notch
           logistics solutions with precision and care. We focus on innovation
           and client satisfaction to support your needs every step of the way.

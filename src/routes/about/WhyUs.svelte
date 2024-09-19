@@ -11,7 +11,7 @@
       <div class="col-12 col-lg-6">
         <div class="row justify-content-xl-center">
           <div class="col-12 col-xl-10">
-            <h2 class="mb-3">Why Choose Us?</h2>
+            <h2 class="mb-3 header-title">Why Choose Us?</h2>
             <p class="lead fs-4 mb-3 mb-xl-5 para">
               At Bison Imperial, we provide expert logistics from China, Dubai,
               and Turkey with global coverage and reliable service to elevate
@@ -94,9 +94,19 @@
   .icon {
     color: #f68b1e;
   }
+  .header-title {
+    font-weight: 700;
+  }
+  .para2 {
+    font-size: 17px !important;
+  }
+  .para {
+    font-weight: 500;
+    font-size: 19px !important;
+  }
   @media (max-width: 600px) {
     .para {
-      font-size: 17px;
+      font-size: 17px !important;
     }
     .para2 {
       font-size: 15px;

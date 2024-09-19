@@ -23,8 +23,8 @@
         <div>
           <h4 class="title">Tema Office</h4>
           <p class="description">
-            TEMA: GT-057-8157, SAMTASHIE BUILDING, NEAR OLD MERIDIAN HOTEL, TEMA
-            COMMUNITY ONE
+            Tema: GT-057-8157, Samtashie building, near old meridian hotel, Tema
+            community one
           </p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> info@bisonshipping.org,
@@ -44,7 +44,7 @@
         <div>
           <h4 class="title">Kumasi Office</h4>
           <p class="description">
-            AK 1838684, GOLD OFFICE, APINO PLAZA, OPP. ALLIANZ FRACAISE, KUMASI
+            AK 1838684, gold office, Apino Plaza, OPP. Allianz Fracaise, Kumasi
           </p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> kumasi@bisonshipping.org,
@@ -64,7 +64,7 @@
         <div>
           <h4 class="title">TAKORADI Office</h4>
           <p class="description">
-            TAKORADI, 185 C. BOTWE STREET CHAPEL HILL TAKORADI
+            Takoradi, 185 C. Botwe street chapel hill Takoradi
           </p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> takoradi@bisonshipping.org,
@@ -93,7 +93,7 @@
         <div>
           <h4 class="title">ELUBO Office</h4>
           <p class="description">
-            ELUBO FUTURE BREAK COMPLEX OPPOSITE OBAMA FILLING STATION
+            Elubo future break complex opposite Obama filling Station
           </p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> elubo@bisonshipping.org,,
@@ -108,7 +108,7 @@
         </div>
         <div>
           <h4 class="title">KIA Office</h4>
-          <p class="description">KIA, ACCRA DA: GT - 356-3729</p>
+          <p class="description text-des">Kia, Accra DA: GT - 356-3729</p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> kia@bisonshipping.org,
             <span style="margin-left: 5px;">
@@ -147,6 +147,7 @@
   .office-content {
     margin-top: 4rem;
   }
+
   .contact-p {
     font-size: 15px;
     font-style: italic;
@@ -156,6 +157,9 @@
   }
   .break {
     display: none;
+  }
+  .featured-services .description {
+    text-transform: capitalize;
   }
   @media (max-width: 600px) {
     .break {

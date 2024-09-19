@@ -77,7 +77,7 @@
               <i class="faq-icon bi bi-question-circle"></i>
               <h3>{item.question}</h3>
               <div class="faq-content">
-                <p>
+                <p style="color: white;">
                   {item.answer}
                 </p>
               </div>
