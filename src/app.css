@@ -62,7 +62,7 @@ body {
 }
 span,
 p {
-  color: var(--default-color);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-family: var(--default-font);
 }
 

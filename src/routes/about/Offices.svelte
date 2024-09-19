@@ -108,7 +108,10 @@
         </div>
         <div>
           <h4 class="title">KIA Office</h4>
-          <p class="description text-des">Kia, Accra DA: GT - 356-3729</p>
+          <p class="description text-des">
+            Room 50, Agency Block, Kotoka International AirPort Accra DA: GT -
+            356-3729
+          </p>
           <p class="contact-p">
             <span> <Mail size={19} /></span> kia@bisonshipping.org,
             <span style="margin-left: 5px;">
