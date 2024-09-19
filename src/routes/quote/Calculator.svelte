@@ -68,12 +68,6 @@
         >
           Air
         </button>
-        <button
-          class="btn mx-2 {currentToggle === 'rates' ? 'active' : 'inactive'}"
-          on:click={() => switchToggle("rates")}
-        >
-          Rates
-        </button>
       </div>
     </div>
 
@@ -265,7 +259,7 @@
   }
 
   .toggle-btns button {
-    width: 155px;
+    width: 210px;
     padding: 13px;
     border: none;
     border-radius: 30px;
