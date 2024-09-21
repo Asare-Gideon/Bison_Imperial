@@ -5,6 +5,9 @@
   import img4 from "../../lib/img/shippin-trends.jpg";
   import img5 from "../../lib/img/service-5.jpg";
   import img6 from "../../lib/img/shipping-carier.jpg";
+  import img7 from "../../lib/img/replace.jpg";
+  import img8 from "../../lib/img/door-to.jpg";
+  import img9 from "../../lib/img/houlage.jpg";
 </script>
 
 <section id="features" class="features section">
@@ -95,12 +98,10 @@
 
     <div class="row gy-4 align-items-center features-item">
       <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-        <img src={img3} class="img-fluid" alt="" />
+        <img src={img9} class="img-fluid" alt="" />
       </div>
       <div class="col-md-7" data-aos="fade-up">
-        <h3>
-          Efficient Haulage and Logistics Solutions Across Key Ghanaian Ports
-        </h3>
+        <h3>Haulage</h3>
         <p>
           Ghana’s two sea ports (ie Tema and Takora- di) have been one of the
           main ports serving it’s landlocked west African neighbors. Bison
@@ -140,7 +141,7 @@
         <img src={img4} class="img-fluid" alt="" />
       </div>
       <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-        <h3>Stay Ahead with Expert Guidance on Trade Trends</h3>
+        <h3>Trade Advice</h3>
         <p class="">
           Understanding your business environment helps an organization to make
           realistic plans and ensure effective implementation of these plans.
@@ -155,7 +156,6 @@
     <!-- Features Item -->
 
     <!-- Features Item -->
-
     <div class="row gy-4 align-items-center features-item">
       <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
         <img src={img5} class="img-fluid" alt="" />
@@ -188,6 +188,7 @@
         </ul>
       </div>
     </div>
+
     <div class="row gy-4 align-items-center features-item">
       <div
         class="col-md-5 order-1 order-md-2 d-flex align-items-center"
@@ -196,7 +197,7 @@
         <img src={img6} class="img-fluid" alt="" />
       </div>
       <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-        <h3>First-Class Domestic and International Courier Services</h3>
+        <h3>Courier Service</h3>
         <p class="fst">
           Bison Imperial Global Shipping and Logistics provides first class
           courier service on both Domestic and International front.
@@ -206,6 +207,78 @@
           Parcel Documents within any geographical area in Ghana. We send and
           receive mails and Parcels from anywhere in the world except the war
           zones
+        </p>
+      </div>
+    </div>
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+        <img src={img7} class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-7" data-aos="fade-up">
+        <h3>Domestic and International Relocation Services</h3>
+        <p>
+          Moving abroad with Bison Imperial Global Relocation Services makes the
+          difference through its expertise and its top-notch client services.
+          Our expertise ensures your move is a success no matter where you move
+          to, no matter where you come from in the world. Bison assists you
+          every single step of the way and guarantees an stress-free
+          international move.
+        </p>
+        <p>
+          The safety of your goods is an absolute priority to Bison, which is
+          why we have developed innovative packing materials and methods
+          unrivalled in the industry. At Bison, we are driven by excellence and
+          continued customer satisfaction. Our teams are well-trained to take
+          care of your belongings from start to finish, making sure the whole
+          process is smooth and enjoyable.
+        </p>
+      </div>
+    </div>
+    <!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item">
+      <div
+        class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+        data-aos="zoom-out"
+      >
+        <img src={img8} class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+        <h3>Door-to-Door Services</h3>
+        <p class="">
+          Our Door-to-Door Services offer a convenient and hassle-free solution
+          for your shipping needs. From the moment your shipment is picked up,
+          we manage every detail, ensuring a smooth and efficient process.
+          Whether it’s local or international, we prioritize timely delivery and
+          handle all logistics with care.
+        </p>
+        <p>
+          With our extensive network and experienced team, we ensure that your
+          cargo reaches its destination safely and securely. We take the
+          complexity out of shipping, allowing you to focus on your business
+          while we handle everything from start to finish.
+        </p>
+      </div>
+    </div>
+
+    <!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item">
+      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+        <img src={img3} class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-7" data-aos="fade-up">
+        <h3>Project Cargo</h3>
+        <p>
+          Bison is a leading project cargo handling and heavy lift Specialist in
+          Ghana. Our experience in project cargo spanning over 10 years makes us
+          a huge force to reckon with in the industry. We have the requisite
+          trucks and equipment to deliver any type of cargo.
+        </p>
+        <p>
+          We also have the state of art technology (GPS) monitoring our trucks,
+          cargo and equipment which enables us to track all our trucks and
+          equipment and update our customers on a regular basis
         </p>
       </div>
     </div>

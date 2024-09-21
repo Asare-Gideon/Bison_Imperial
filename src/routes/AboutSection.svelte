@@ -19,7 +19,7 @@
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <h3>About Us</h3>
+        <h3 style="text-transform: uppercase;">About Us</h3>
         <p>
           Bison Imperial Global Shipping and Logistics is a fast-expanding
           shipping and logistics service provider headquartered in the biggest
@@ -29,7 +29,7 @@
           <li class="">
             <i class="bi bi-diagram-3 about-icon"></i>
             <div>
-              <h5>EVOLUTION OF SHIPPING SOLUTIONS</h5>
+              <h5>Evolution Of Shipping Solutions</h5>
               <p>
                 Our shipping services evolve to meet modern business demands,
                 adapting to market changes and customer expectations for optimal
@@ -40,7 +40,7 @@
           <li>
             <i class="bi bi-fullscreen-exit about-icon"></i>
             <div>
-              <h5>INTEGRITY IN EVERY ACTION</h5>
+              <h5>Integrity In Every Action</h5>
               <p>
                 We operate with the highest ethical standards, ensuring that
                 every decision is made with transparency and accountability,
@@ -51,7 +51,7 @@
           <li>
             <i class="bi bi-broadcast about-icon"></i>
             <div>
-              <h5>THE POWER OF TEAMWORK</h5>
+              <h5>The Power Of Teamwork</h5>
               <p>
                 Collaboration is at the heart of our success, where every team
                 member, partner, and client works together toward shared goals,
@@ -66,6 +66,9 @@
 </section>
 
 <style>
+  .about h5 {
+    text-transform: capitalize;
+  }
   @media only screen and (max-width: 600px) {
     .about-icon {
       font-size: 30px !important;

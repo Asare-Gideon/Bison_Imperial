@@ -117,4 +117,7 @@
 </section>
 
 <style>
+  .services h3 {
+    text-transform: capitalize !important;
+  }
 </style>
