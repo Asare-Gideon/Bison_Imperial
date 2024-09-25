@@ -1,5 +1,5 @@
 <script>
-  import img from "../lib/img/about.jpg";
+  import img from "../lib/img/about-bg.jpg";
 </script>
 
 <section id="about" class="about section">
@@ -10,7 +10,7 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <img src={img} class="img-fluid" alt="" />
+        <img src={img} class="bg-img" alt="" />
         <a href="#" class="glightbox pulsating-play-btn"><span></span></a>
       </div>
 
@@ -69,9 +69,20 @@
   .about h5 {
     text-transform: capitalize;
   }
+  .bg-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: fill;
+  }
   @media only screen and (max-width: 600px) {
     .about-icon {
       font-size: 30px !important;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .bg-img {
+      height: 100%;
     }
   }
 </style>

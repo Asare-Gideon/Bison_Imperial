@@ -224,7 +224,7 @@
     position: absolute;
     top: 37vh;
     left: 0;
-    right: 0;
+    right:0;
   }
   .country-cont {
     display: flex;
