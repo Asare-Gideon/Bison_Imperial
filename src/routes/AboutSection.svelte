@@ -11,7 +11,7 @@
         data-aos-delay="200"
       >
         <img src={img} class="bg-img" alt="" />
-        <a href="#" class="glightbox pulsating-play-btn"><span></span></a>
+        <!-- <a href="#" class="glightbox pulsating-play-btn"><span></span></a> -->
       </div>
 
       <div
