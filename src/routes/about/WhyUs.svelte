@@ -1,5 +1,5 @@
 <script>
-  import img from "../../lib/img/whyus.jpg";
+  import img from "../../lib/img/why-us.jpg";
 </script>
 
 <section class="py-3 py-md-5">
