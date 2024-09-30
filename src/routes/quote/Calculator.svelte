@@ -1,54 +1,48 @@
 <script lang="ts">
-  let currentToggle: "sea" | "air" | "rates" = "sea"; // Default toggle state
+  import { formatAmount, formatQty } from "../../common/utils";
+  import type { AmountCalculatorResponseType } from "../../requests/calculator";
+  import calculatorApi from "../../requests/calculator";
+  import countriesApi from "../../requests/countries";
+  import Querier from "../../requests/querier";
+
+  let countriesQuery = Querier().call(countriesApi.useFetch())
+  let currentToggle: "sea" | "air" | "rates" = "sea";
   let length: number = 0,
     width: number = 0,
     height: number = 0,
-    quantity: number = 0,
+    quantity: number = 1,
     weight: number = 0;
-  let seaCbm: number = 0,
-    airShippingCost: number = 0,
-    seaShippingCost: number = 0;
+
   let fromCountry: string = "",
     toCountry: string = ""; // Selected countries
-  const countries = [
-    "Ghana",
-    "China",
-    "USA",
-    "UK",
-    "Turkey",
-    "Germany",
-    "Dubai",
-  ]; // Example countries
 
-  const shippingRateCedi: number = 12; // Example rates for conversion
-  const shippingRateDollar: number = 1; // Conversion rate for dollars
-  const rates = { sea: 50, air: 100 }; // Example shipping rates for sea and air
-
-  const calculateCBM = (): void => {
-    if (currentToggle === "sea") {
-      seaCbm = (length * width * height * quantity) / 1000000; // Convert cm to meters (CBM)
-      seaShippingCost = seaCbm * rates.sea;
-    } else if (currentToggle === "air") {
-      airShippingCost = weight * quantity * rates.air;
-    }
-  };
+  const calculateQuerier = Querier();
+  const calculateQuery = calculateQuerier.getState();
 
   const switchToggle = (toggle: "sea" | "air" | "rates"): void => {
     currentToggle = toggle;
+    calculateQuerier.reset();
     resetFields();
   };
 
   const resetFields = (): void => {
-    seaCbm = 0;
-    airShippingCost = 0;
     length = 0;
     width = 0;
     height = 0;
     weight = 0;
-    quantity = 0;
-    fromCountry = "";
-    toCountry = "";
+    quantity = 1;
+    // fromCountry = "";
+    // toCountry = "";
   };
+
+  $: if(fromCountry){
+      if(currentToggle === "air" && weight && quantity){
+        calculateQuerier.call(calculatorApi.useFetch({isAir: true, from: fromCountry, to: toCountry, weight}))
+      }else{
+        calculateQuerier.call(calculatorApi.useFetch({isAir: false, from: fromCountry, to: toCountry, h: height, w: width, l: length, qty: quantity}))
+      }
+  }
+
 </script>
 
 <div class="main">
@@ -81,32 +75,34 @@
             <label>Shipping from?</label>
             <select bind:value={fromCountry} class="form-control">
               <option value="">Select a country</option>
-              {#each countries as country}
-                <option value={country}>{country}</option>
-              {/each}
+              {#if $countriesQuery.data}
+                {#each $countriesQuery.data.data as country}
+                  <option value={country._id}>{country.name}</option>
+                {/each}
+              {/if}
             </select>
           </div>
 
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label>Shipping to?</label>
             <select bind:value={toCountry} class="form-control">
               <option value="">Select a country</option>
-              {#each countries as country}
-                <option value={country}>{country}</option>
-              {/each}
+              {#if $countriesQuery.data}
+                {#each $countriesQuery.data.data as country}
+                  <option value={country._id}>{country.name}</option>
+                {/each}
+              {/if}
             </select>
-          </div>
+          </div> -->
         </div>
 
         <!-- Sea Shipping Details -->
         <div class="result-section mt-3">
           <h4 class="result-text" style="color: #f8f9fa;">
-            Total CBM: {seaCbm.toFixed(2)} m³
+            Total CBM: {formatQty($calculateQuery?.data?.value || 0, 3)} m³
           </h4>
           <h5 class="result-text" style="color: #f8f9fa;">
-            Cost: ${seaShippingCost.toFixed(2)} / GHS {(
-              seaShippingCost * shippingRateCedi
-            ).toFixed(2)}
+            Cost: ${formatAmount($calculateQuery?.data?.price || 0)} / GHS {formatAmount(($calculateQuery?.data?.price || 0) * ($calculateQuery?.data?.dollarRate || 0))}
           </h5>
         </div>
 
@@ -149,28 +145,32 @@
           <label>Shipping from?</label>
           <select bind:value={fromCountry} class="form-control">
             <option value="">Select a country</option>
-            {#each countries as country}
-              <option value={country}>{country}</option>
-            {/each}
+            {#if $countriesQuery.data}
+                {#each $countriesQuery.data.data as country}
+                  <option value={country._id}>{country.name}</option>
+                {/each}
+              {/if}
           </select>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label>Shipping to?</label>
           <select bind:value={toCountry} class="form-control">
             <option value="">Select a country</option>
-            {#each countries as country}
-              <option value={country}>{country}</option>
-            {/each}
+            {#if $countriesQuery.data}
+                {#each $countriesQuery.data.data as country}
+                  <option value={country._id}>{country.name}</option>
+                {/each}
+              {/if}
           </select>
-        </div>
+        </div> -->
 
         <div class="result-section mt-3">
           <h5 class="result-text" style="color: #f8f9fa;">
-            Cost: ${airShippingCost.toFixed(2)}
+            Cost: ${formatAmount($calculateQuery?.data?.price || 0)}
           </h5>
           <h5 class="result-text" style="color: #f8f9fa;">
-            GHS {(airShippingCost * shippingRateCedi).toFixed(2)}
+            GHS {formatAmount(($calculateQuery?.data?.price || 0) * ($calculateQuery?.data?.dollarRate || 0))}
           </h5>
         </div>
 
@@ -192,7 +192,7 @@
     {/if}
 
     <!-- Rates Section -->
-    {#if currentToggle === "rates"}
+    <!-- {#if currentToggle === "rates"}
       <div class="rates-container toggle-content">
         <h3>Shipping Rates</h3>
         <div class="rates-content">
@@ -203,7 +203,7 @@
           </p>
         </div>
       </div>
-    {/if}
+    {/if} -->
   </div>
 </div>
 

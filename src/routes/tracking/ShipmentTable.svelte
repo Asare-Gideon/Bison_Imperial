@@ -1,24 +1,30 @@
 <script lang="ts">
+  import { formatQty } from "../../common/utils";
+
+  export let isAir: boolean;
   export let shipmentItems: {
     description: string;
-    cbm: number;
+    value: number;
     quantity: number;
+    supplyTracking: string;
   }[] = [];
 </script>
 
 <table class="shipment-table">
   <thead>
     <tr>
+      <th>Supplier Tracking Number</th>
       <th>Item Description</th>
-      <th>CBM</th>
+      <th>{isAir ? "KG" : "CBM"}</th>
       <th>Quantity</th>
     </tr>
   </thead>
   <tbody>
     {#each shipmentItems as item}
       <tr>
+        <td>{item.supplyTracking}</td>
         <td>{item.description}</td>
-        <td>{item.cbm} m³</td>
+        <td>{formatQty(item.value, 3)} {isAir ? "kg" : "m³"}</td>
         <td>{item.quantity}</td>
       </tr>
     {/each}

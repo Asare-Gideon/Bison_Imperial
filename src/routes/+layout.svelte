@@ -4,14 +4,14 @@
   import Footer from "../components/Footer.svelte";
 </script>
 
-<div class="app">
-  <NavigationBar />
-
-  <main class="main">
-    <slot />
-  </main>
-  <Footer />
-</div>
+  <div class="app">
+    <NavigationBar />
+  
+    <main class="main">
+      <slot />
+    </main>
+    <Footer />
+  </div>
 
 <style>
 </style>

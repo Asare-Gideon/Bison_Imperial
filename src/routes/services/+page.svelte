@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>Services</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Services" />
 </svelte:head>
 
 <div class="">
