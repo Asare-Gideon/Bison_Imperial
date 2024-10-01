@@ -30,7 +30,7 @@
           <h4 class="title">Insurance Protection</h4>
           <p class="description">
             Protect your shipments with comprehensive insurance options that
-            cover damage, loss, or unforeseen events.
+            cover damage, loss, or unforeseen events (T&C Apply).
           </p>
           <!-- <a href="#" class="readmore stretched-link"
             ><span>Learn More</span><i class="bi bi-arrow-right"></i></a
