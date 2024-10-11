@@ -28,7 +28,7 @@
               class="col-md-5 pro-pic"
               style={`background:url(${img1}) no-repeat center center / cover`}
             >
-              <div class="card-img-overlay">
+              <!-- <div class="card-img-overlay">
                 <ul class="list-inline position-relative text-center">
                   <li class="list-inline-item">
                     <a
@@ -52,7 +52,7 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-7 bg-white">
               <div class="p-4">
@@ -81,7 +81,7 @@
               class="col-md-5 pro-pic"
               style={`background:url(${img3})no-repeat center center / cover`}
             >
-              <div class="card-img-overlay">
+              <!-- <div class="card-img-overlay">
                 <ul class="list-inline position-relative text-center">
                   <li class="list-inline-item">
                     <a
@@ -105,7 +105,7 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-7 bg-white">
               <div class="p-4">
@@ -137,7 +137,7 @@
               class="col-md-5 pro-pic"
               style={`background:url(${img2})no-repeat center center / cover`}
             >
-              <div class="card-img-overlay">
+              <!-- <div class="card-img-overlay">
                 <ul class="list-inline position-relative text-center">
                   <li class="list-inline-item">
                     <a
@@ -161,7 +161,7 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-7 bg-white">
               <div class="p-4">
@@ -189,7 +189,7 @@
               class="col-md-5 pro-pic"
               style={`background:url(${img4})no-repeat center center / cover`}
             >
-              <div class="card-img-overlay">
+              <!-- <div class="card-img-overlay">
                 <ul class="list-inline position-relative text-center">
                   <li class="list-inline-item">
                     <a
@@ -213,7 +213,7 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-7 bg-white">
               <div class="p-4">

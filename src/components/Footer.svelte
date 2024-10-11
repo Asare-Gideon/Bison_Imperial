@@ -16,10 +16,15 @@
             technology, we deliver excellence in every shipment
           </p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+            <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a
+              href="https://www.instagram.com/bison_imperial_global?igsh=ZWgzbTN6eGpmbjdl&utm_source=qr "
+              ><i class="bi bi-instagram"></i></a
+            >
+            <a href="https://www.tiktok.com/@bisonshipping?_t=8qBFRueAtiI&_r=1"
+              ><i class="bi bi-tiktok"></i></a
+            >
           </div>
         </div>
 
