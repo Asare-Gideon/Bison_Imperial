@@ -2,27 +2,22 @@
   import bgImg from "../../lib/img/page-title-bg.jpg";
   import { ScanQrCode } from "lucide-svelte";
   import ShipmentResults from "./ShipmentResults.svelte";
-  let trackingId: string = "";
-  let loadingDate: string = "2024-09-12";
-  let totalCBM: number = 35.5;
-  let destination: string = "Tema, Ghana";
-  let email: string = "example@example.com";
-  let phoneNumber: string = "+233 24 123 4567";
-  let shipmentItems = [
-    { description: "Electronic Appliances", cbm: 10.2, quantity: 3 },
-    { description: "Furniture", cbm: 8.0, quantity: 2 },
-    { description: "Clothing", cbm: 4.5, quantity: 5 },
-  ];
-  let totalPrice: number = 20000; // in GHS
+  import trackingApi, { TrackKindEnum } from "../../requests/tracking";
+  import Querier from "../../requests/querier";
+  import Loader from "../../components/Loader.svelte";
+  const urlParams = new URLSearchParams(typeof window !== "undefined" ? window.location.search : {});
+  const trackingNumber = urlParams.get("tckNum") as string;
+  let searchedTracking = trackingNumber || "";
+  let fetcher = trackingApi.useFetch({trackFor: TrackKindEnum.containerTracking, trackingNumber: searchedTracking});
+  const query = Querier().call(fetcher)
 
-  const handleTrack = (id: string) => {
-    trackingId = id;
-  };
+  $: searchedTracking = trackingNumber;
+  $: fetcher = trackingApi.useFetch({trackFor: TrackKindEnum.containerTracking, trackingNumber: searchedTracking});
 </script>
 
 <svelte:head>
   <title>Tracking</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Tracking" />
 </svelte:head>
 
 <div class="main">
@@ -34,7 +29,10 @@
     <div class="container position-relative">
       <div class="track-input-container">
         <h1>Tracking</h1>
-        <form action="#" class="form-search d-flex align-items-stretch mb-3">
+        <form action="#" on:submit={(e) => {
+          e.preventDefault();
+          Querier.call(fetcher)
+        }} class="form-search d-flex align-items-stretch mb-3">
           <span
             style="margin-top: 10px; margin-right: -5px; margin-left: 10px;"
           >
@@ -44,6 +42,8 @@
             type="text"
             class="form-control"
             placeholder="Enter Tracking Number"
+            bind:value={searchedTracking}
+            required
           />
           <button type="submit" class="btn btn-primary" style="border: none">
             Track
@@ -52,19 +52,31 @@
       </div>
     </div>
   </div>
-
-  <div class="track-content container">
-    <ShipmentResults
-      {trackingId}
-      {loadingDate}
-      {totalCBM}
-      {destination}
-      {email}
-      {phoneNumber}
-      {shipmentItems}
-      {totalPrice}
-    />
-  </div>
+    {#if $query.loading}
+        <div class="track-content container center-items">
+          <div class="loading-container">
+            <Loader />
+            <span style="margin-top:30px; font-size: 16px;">Loading</span>
+          </div>
+          
+        </div>
+        {:else if $query.error}
+        <div class="track-content container center-items">
+          <img src="/images/not-found.svg" class="error-icon" alt="Tracking number not found svg illustration" />
+          <div>
+            <p class="error-text">{$query.error?.message || ""}</p>
+            {#if $query.error.name === "NotFoundError"}
+            <p class="error-sub-text">We couldn't find your tracking number, kindly contact us for clarity or try a different one</p>
+            {/if}
+          </div>
+        </div>
+        {:else}
+        <div class="track-content container">
+          <ShipmentResults
+            shipment={$query.data}
+          />
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -149,5 +161,45 @@
     left: 0;
     background-color: #001973;
     opacity: 0.6;
+  }
+  .error-text{
+    font-size: xx-large;
+  }
+  .error-sub-text{
+    color: black;
+    max-width: 480px;
+  }
+  .track-content.center-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .error-icon{
+    width: 350px;
+    height: 350px;
+  }
+  @media screen and (max-width: 1024px){
+    .error-text{
+      font-size: larger;
+    }
+    .track-content.track-content.center-items{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .error-icon{
+      width: 256px;
+      height: 256px;
+    }
+  }
+  .loading-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
   }
 </style>

@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+  <title>Quote</title>
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Quote" />
 </svelte:head>
 
 <div class="">

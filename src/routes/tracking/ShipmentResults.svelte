@@ -1,23 +1,20 @@
 <script lang="ts">
+  import moment from "moment";
+  import type { ShipmentsQuerierType } from "../../common/types";
   import ShipmentTable from "./ShipmentTable.svelte";
+  import { formatAmount, formatQty } from "../../common/utils";
 
-  export let trackingId: string = "";
-  export let loadingDate: string = "";
-  export let totalCBM: number = 0;
-  export let destination: string = "";
-  export let email: string = "";
-  export let phoneNumber: string = "";
-  export let shipmentItems: {
-    description: string;
-    cbm: number;
-    quantity: number;
-  }[] = [];
-  export let totalPrice: number = 0;
+  export let shipment: ShipmentsQuerierType | null;
+  let totalValue = shipment?.shipments.reduce((p, c) => p + (shipment.container.isAir ? (c.weight || 0) : (c.confirmedCbm || c.cbm)),0) || 0
+  let totalQuantity = shipment?.shipments.reduce((p, c) => p + (c.confirmedCalcQuantity || c.calcQuantity || c.quantity || 0), 0)
+  let currentLocation = shipment?.container.routes?.find(route => route.isCurrent) || null;
+  let totalPrice = (shipment?.shipments.reduce((p, c) => p + (c.confirmedPrice || c.price || 0), 0) || 0) * (shipment?.container.dollarRate || 0)
 
   const downloadInvoice = () => {
     // Simulate invoice download
     alert("Invoice downloaded.");
   };
+
 </script>
 
 <div class="tracking-result">
@@ -26,37 +23,37 @@
   <div class="info-container">
     <div class="info-item">
       <strong>Loading Date:</strong>
-      {loadingDate}
+      {moment.utc(shipment?.container.loadingDate).format("Do MMM, YYYY")}
     </div>
     <div class="info-item">
       <strong>Tracking ID:</strong>
-      {trackingId}
+      {shipment?.tracking}
     </div>
 
     <div class="info-item">
-      <strong>Total CBM:</strong>
-      {totalCBM} m³
+      <strong>Total {shipment?.container.isAir ? "KG" : "CBM"}:</strong>
+      {formatQty(totalValue, 3)} {shipment?.container.isAir ? "kg" : "m³" }
     </div>
 
     <div class="info-item">
       <strong>Email:</strong>
-      {email}
+      {shipment?.user.email || ""}
     </div>
     <div class="info-item">
       <strong>Current Destination:</strong>
-      {destination}
+      {currentLocation?.location.name  || "UNKNOWN"}
     </div>
     <div class="info-item">
       <strong>Phone Number:</strong>
-      {phoneNumber}
+      {shipment?.user.phoneNumber}
     </div>
   </div>
 
-  <ShipmentTable {shipmentItems} />
+  <ShipmentTable shipmentItems={(shipment?.shipments || []).map(item => ({value: shipment?.container.isAir ? item.weight || 0 : item.confirmedCbm || item.cbm, description: item.description, quantity: item.quantity, supplyTracking: item.supplyTracking}))} isAir={Boolean(shipment?.container.isAir)} />
 
   <div class="total-price">
     <h4>Total Price:</h4>
-    <p>₵ {totalPrice.toFixed(2)} GHS</p>
+    <p>₵ {formatAmount(totalPrice)}</p>
   </div>
 </div>
 

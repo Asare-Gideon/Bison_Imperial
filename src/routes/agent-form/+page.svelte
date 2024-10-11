@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>Agent form</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Agent Form" />
 </svelte:head>
 
 <div class="">

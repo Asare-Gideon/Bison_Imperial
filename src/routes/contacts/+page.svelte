@@ -1,6 +1,6 @@
 <svelte:head>
-  <title>Contacts</title>
-  <meta name="description" content="About this app" />
+  <title>Contact</title>
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Contact" />
 </svelte:head>
 
 <div class="">

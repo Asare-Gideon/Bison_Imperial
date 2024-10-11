@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-  <title>Services</title>
-  <meta name="description" content="About this app" />
+  <title>Team</title>
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | Team" />
 </svelte:head>
 
 <div class="">

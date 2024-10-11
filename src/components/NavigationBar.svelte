@@ -1,5 +1,6 @@
 <script>
   import logo from "../lib/img/bison.png";
+  import { page } from '$app/stores';  
 </script>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
@@ -15,12 +16,12 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li>
-          <a href="/" class="active">Home<br /></a>
+          <a href="/" class={`${$page.url.pathname === "/" ? "active" : ""}`}>Home<br /></a>
         </li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/team">Team</a></li>
-        <li><a href="/contacts">Contact</a></li>
+        <li><a href="/about" class={`${$page.url.pathname === "/about" ? "active" : ""}`}>About</a></li>
+        <li><a href="/services" class={`${$page.url.pathname === "/services" ? "active" : ""}`}>Services</a></li>
+        <li><a href="/team" class={`${$page.url.pathname === "/team" ? "active" : ""}`}>Team</a></li>
+        <li><a href="/contacts" class={`${$page.url.pathname === "/contacts" ? "active" : ""}`}>Contact</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>

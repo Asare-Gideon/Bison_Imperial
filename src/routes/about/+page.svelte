@@ -9,7 +9,7 @@
 
 <svelte:head>
   <title>About</title>
-  <meta name="description" content="About this app" />
+  <meta name="description" content="Bison Imperial Global Shipping and Logistics | About" />
 </svelte:head>
 
 <div class="">
